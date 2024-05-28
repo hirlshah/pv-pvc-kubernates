@@ -1,0 +1,12 @@
+kubectl apply -f pv.yaml
+kubectl apply -f pvc.yaml
+kubectl apply -f mysql-deployment.yaml
+
+docker pull mysql:5.7
+
+kubectl logs mysql-6b748b4c5f-pddjk
+
+
+kubectl get pv
+kubectl get pvc
+kubectl get pods
